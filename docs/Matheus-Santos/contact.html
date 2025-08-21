@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Contato - Guia Turístico</title>
+</head>
+<body>
+
+    <center>
+
+        <header>
+            <h1>Contato e Inscrição para Passeio</h1>
+            <nav>
+                <a href="index.html">Página Inicial</a> |
+                <a href="about.html">Sobre o Site</a> |
+                <a href="contact.html">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+            <hr>
+            <h2>Inscreva-se para um Passeio Guiado!</h2>
+            
+            <form action="#" method="post" onsubmit="alert('Inscrição enviada com sucesso!'); return false;">
+                <fieldset>
+                    <legend>Suas Informações</legend>
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" required size="50">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required size="50" placeholder="seuemail@exemplo.com">
+                    </p>
+                    <p>
+                        <label for="telefone">Telefone (com DDD):</label><br>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="88912345678" pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalhes do Passeio</legend>
+                    <p>
+                        <label for="data_passeio">Data desejada para o passeio:</label><br>
+                        <input type="date" id="data_passeio" name="data_passeio">
+                    </p>
+                    <p>
+                        <label for="num_pessoas">Número de Pessoas (1 a 10):</label><br>
+                        <input type="number" id="num_pessoas" name="num_pessoas" min="1" max="10" value="1">
+                    </p>
+                    <p>
+                        <label for="nivel_aventura">Qual seu nível de aventura? (0=Relax, 10=Adrenalina Total)</label><br>
+                        <input type="range" id="nivel_aventura" name="nivel_aventura" min="0" max="10" step="1" list="marcadores_nivel">
+                        
+                        <datalist id="marcadores_nivel">
+                            <option value="0" label="0"></option>
+                            <option value="1"></option>
+                            <option value="2" label="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5" label="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8" label="8"></option>
+                            <option value="9"></option>
+                            <option value="10" label="10"></option>
+                        </datalist>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Enviar Inscrição</button>
+                <button type="reset">Limpar Formulário</button>
+            </form>
+            <hr>
+        </main>
+
+    </center>
+
+    <footer>
+        <p>© 2025 - Guia Turístico do Vale do Jaguaribe. Todos os direitos reservados. <i>Matheus dos Santos</i></p>
+    </footer>
+
+</body>
+</html>
